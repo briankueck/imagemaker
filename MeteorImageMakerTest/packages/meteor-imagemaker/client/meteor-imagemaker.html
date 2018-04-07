@@ -1,0 +1,36 @@
+<head>
+  <title>Image Maker Demo</title>
+  <!-- Author: Brian Kueck @briankueck -->
+</head>
+
+<body class="imagemaker">
+  <h1 class="heading">Welcome to Image Maker!</h1>
+  <div>To create a photo strip, first drag & drop 4 images (.PNG, .JPG, not .GIF) from your computer into this area or click the area to browse for them.</div>
+
+  {{> imageUpload url='/upload' id='dropzoneDiv' maxFiles=4}}
+  {{> imagemaker}}
+</body>
+
+<template name="imagemaker">
+  <div class="status-text">
+    <span>You've attached <span class="counter">0</span> files.</span>
+    <span class="uploading-msg hidden">
+      <span>All files have been submitted to the server.</span>
+    </span>
+  </div>
+  <img src="/packages/meteor-imagemaker/public/ajax-loader.gif" class="ajax-loader hidden">
+
+  <div class="photostrip-container hidden">
+    <p>
+      <div>Here is your photo strip. Enjoy!</div>
+    </p>
+    <iframe src="/static" id="iframe"></iframe>
+    <div class="small">(If different sized files were uploaded, then the final photostrip might contain transparent areas in it. It's still a single image.)</div>
+    <p>
+      <a href="/download" id="downloadLink">Download the photostrip</a>
+    </p>
+    <p>
+      As this is simply a demo... Reload to try again!
+    </p>
+  </div>
+</template>

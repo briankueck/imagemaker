@@ -1,0 +1,1 @@
+import { imageMakerClient } from 'meteor/meteor-imagemaker';

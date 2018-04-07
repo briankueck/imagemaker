@@ -1,0 +1,67 @@
+.imagemaker {
+  font-family: verdana, arial, sans-serif;
+}
+
+.imagemaker .heading {
+  font-family: arial, sans-serif;
+}
+
+.imagemaker .hidden {
+  display: none;
+}
+
+.imagemaker .dropzone {
+  background-color: #FFFFCC;
+  border: 2px solid orange;
+  border-radius: 24px;
+  height: 185px;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  padding: 15px;
+  width: 650px;
+}
+
+.imagemaker .dropzone.success {
+  background-color: #CCFFCC;
+  border: 3px solid #009900;
+}
+
+.imagemaker .dropzone .dz-message {
+  margin-top: 60px;
+}
+
+.imagemaker .ajax-loader {
+  margin-top: 10px;
+}
+
+.imagemaker .status-text {
+  margin-top: 10px;
+}
+
+.imagemaker .photostrip-wrap {
+  margin-top: 20px;
+}
+
+.imagemaker #iframe {
+  background-color: cornflowerblue;
+  border: 3px solid #000099;
+  border-radius: 24px;
+  height: 200px;
+  margin-top: 10px;
+  padding: 20px;
+  width: 800px;
+}
+
+.imagemaker .photostrip-container {
+  margin-top: 20px;
+}
+
+.imagemaker #iframe .photostrip {
+  border: 1px solid #0033AA;
+}
+
+.imagemaker .small {
+  color: #999999;
+  font-size: 8pt;
+  margin: 5px 0 0 75px;
+}
